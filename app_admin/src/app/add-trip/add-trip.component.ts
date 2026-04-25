@@ -9,7 +9,7 @@ import { TripDataService } from '../services/trip-data.service';
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './add-trip.component.html',
-  styleUrl: './add-trip.component.css',
+  styleUrls: ['./add-trip.component.css'],
 })
 
 export class AddTripComponent implements OnInit {
@@ -50,7 +50,7 @@ export class AddTripComponent implements OnInit {
         }});
     }
   }
-// get the forrm short name to access form fields
+// get the form short name to access form fields
   get f() { return this.addForm.controls; }
 }
 

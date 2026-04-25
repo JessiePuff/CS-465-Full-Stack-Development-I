@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-//import { trips } from '../data/trips';
+import { trips } from '../data/trips';
 import { TripCardComponent } from '../trip-card/trip-card.component';
 
 import { Trip } from '../models/trip';
@@ -18,8 +18,8 @@ import { Router} from '@angular/router';
 })
 
 export class TripListingComponent implements OnInit {
-  //trips: Array<any> = trips;
-  trips!: Trip[];
+  trips: Array<any> =trips;
+  //trips!: Trip[];
   message: string = '';
   
   constructor (private tripDataService: TripDataService, 

@@ -8,7 +8,7 @@ import { Trip } from '../models/trip';
   standalone: true,
   imports: [CommonModule ],
   templateUrl: './trip-card.component.html',
-  styleUrl: './trip-card.component.css',
+  styleUrls: ['./trip-card.component.css'],
 })
 export class TripCardComponent implements OnInit {
   
